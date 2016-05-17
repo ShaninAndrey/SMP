@@ -15,37 +15,24 @@
 		<div id = "name">
 			Log in please
 		</div>
-		<div id = "log_out_but" class = "but">
+		<a id = "log_out_but" class = "but">
 			<img class = "img" src = "img\log_out.jpg">
 			Log out
-		</div>
-		<div id = "log_in_but" class = "but" onmouseup = "log_but_click()">
+		</a>
+		<a href = "log_in.html" id = "log_in_but" class = "but">
 			<img class = "img" src = "img\log_in.png">
 			Log in
-		</div>
-		<div id = "sign_up_but" class = "but" onmouseup = "sign_but_click()">
+		</a>
+		<a href = "sign_up.html" id = "sign_up_but" class = "but">
 			<img class = "img" src = "img\sign_up.png">
 			Sign up
-		</div>
+		</a>
 	</div>
 	<form id = "log_form">
 		<input id="log_mail" name = "log_mail" type="e-mail" placeholder="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
 		<input id="log_pass" name = "log_pass" type="password" placeholder="Password" pattern=".{6,20}" required/>
         <input id="log_in" value="Log in" type="submit"/>
         <div id="log_error">password or e-mail are invalid</div>
-	</form>
-	<form id = "sign_form">
-		<input id="sign_nick" name = "sign_nick" type="text" placeholder="Your Name" pattern="^[a-zA-Z-А-Яа-яЁё]+$" required/>
-		<input id="sign_pass" name = "sign_pass" type="password" placeholder="Password" pattern=".{6,20}" required/>
-		<input id="sign_password" name = "sign_password" type="password" placeholder="Password Confirming" pattern=".{6,20}" required/>
-		<input id="sign_mail" name = "sign_mail" type="e-mail" placeholder="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
-        <input id="sign_up" value="Sign up" type="submit"/>
-        <div id="sign_error">
-			<div id="pass_inv">passwords aren't equale</div>
-			<div id="email_inv">this e-mail already used</div>
-		</div>
-	</form>
-	<form id = "notice">
 	</form>
 </body>
 </html>
