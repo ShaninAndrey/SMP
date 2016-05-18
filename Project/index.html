@@ -1,5 +1,4 @@
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="author" content="Andrey Shanin">
@@ -27,6 +26,9 @@
 			<img class = "img" src = "img\sign_up.png">
 			Sign up
 		</div>
+		<div id = "add_note" onmouseup = "add_note('', 0, 0, 0)">
+			Add note
+		</div>
 	</div>
 	<form id = "log_form">
 		<input id="log_mail" name = "log_mail" type="e-mail" placeholder="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
@@ -47,5 +49,6 @@
 	</form>
 	<form id = "notice">
 	</form>
+
 </body>
 </html>
