@@ -1,0 +1,74 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Andrey Shanin">
+	<meta name="description" content="Online notice">
+	<meta name="keywords" content="notes notice tips keep note lemma lemmas free tip text текст заметки">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="all.js"></script>
+	<script type="text/javascript" src="jquery-1.12.2.js"></script>
+	<script type="text/javascript" src="jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="jcf/js/jsf.scrollable.js"></script>
+	<title>Notice</title>
+</head>
+<body>
+	<div id = "navigation">
+		<p id = "name" class = "h3">
+			Log in please
+		</p>
+		<button id = "log_out_but" class = "but btn btn-default">
+			<img class = "img" src = "img\log_out.png">
+			Log out
+		</button>
+		<div class = "btn-group" style = "visibility: hidden; position: absolute; top: 18px; right: 20px;">
+			<button id = "log_in_but" class = "but btn btn-default" onmouseup = "log_but_click()">
+				<img class = "img" src = "img\log_in.png">
+				Log in
+			</button>
+			<button id = "sign_up_but" class = "but btn btn-default" onmouseup = "sign_but_click()">
+				<img class = "img" src = "img\sign_up.png">
+				Sign up
+			</button>
+		</div>
+		<button id = "add_note" class = "btn btn-primary btn-sm" onclick = "add_note()" >Add note</button>
+	</div>
+	<form id = "log_form" role = "form">
+		<div id = "log_mail_form" class = "form-group">
+			<div class = "input-group">
+				<span class="input-group-addon">@</span>
+				<input id="log_mail" name = "log_mail" class = "form-control" type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+			</div>
+		</div>
+		<div id = "log_pass_form" class = "form-group">
+			<input id="log_pass" name = "log_pass" class = "form-control" type="password" placeholder="Password" pattern=".{6,20}" required/>
+		</div>
+		<button id="log_in" type="submit" class = "btn btn-success">Log in</button>
+	</form>
+	<form id = "sign_form" role = "form">
+		<div class = "form-group">
+			<input id="sign_nick" name = "sign_nick" class = "form-control" type="text" placeholder="Your Name" pattern="^[a-zA-Z-А-Яа-яЁё]+$" required/>
+		</div>
+		<div id = "sign_mail_form" class = "form-group">
+			<div class = "input-group">
+				<span class="input-group-addon">@</span>
+				<input id="sign_mail" name = "sign_mail" class = "form-control" type="e-mail" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+			</div>
+		</div>
+		<div class = "form-group">
+			<input id="sign_pass" name = "sign_pass" class = "form-control" type="password" placeholder="Password" pattern=".{6,20}" required/>
+		</div>
+		<div id = "sign_pass_form" class = "form-group">
+			<input id="sign_password" name = "sign_password" class = "form-control" type="password" placeholder="Password Confirming" pattern=".{6,20}" required/>
+		</div>
+		<input id="sign_up" value="Sign up" class = "btn btn-success" type="submit"/>
+        <div id="sign_error">
+			<div id="pass_inv">passwords aren't equale</div>
+			<div id="email_inv">this e-mail already used</div>
+		</div>
+	</form>
+	<form id = "notice" class = "flexcroll">
+	</form>
+</body>
+</html>

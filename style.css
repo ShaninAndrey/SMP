@@ -1,0 +1,106 @@
+a{
+	text-decoration: none;
+	color: black;
+	font-weight: 100;
+}
+
+#sign_form{
+	visibility: hidden;
+	position: absolute;
+	width: 50%;
+	top: 200px;
+	margin-left: 25%;
+}
+#sign_form #sign_error #pass_inv{
+	visibility : hidden;
+}
+#sign_form #sign_error #email_inv{
+	visibility : hidden;
+}
+#sign_form #sign_up{
+	width: 50%;
+	margin-left: 25%;
+}
+
+#log_form{
+	visibility: hidden;
+	position: absolute;
+	width : 50%;
+	top: 249px;
+	margin-left : 25%;
+}
+#log_form #log_mail{
+	width : 100%;
+}
+#log_form #log_pass{
+	width : 100%;
+}
+#log_form #log_in{
+	width: 50%;
+	margin-left: 25%;
+}
+
+#navigation{
+	height : 70;
+	text-align : center;
+}
+#navigation #log_out_but{
+	visibility : hidden;
+	position : absolute;
+	right : 20;
+	top : 20;
+}
+#navigation #name{
+	visibility : hidden;
+	top: 10;
+	text-align: center;
+}
+#navigation #add_note{
+	visibility : hidden;
+	position : absolute;
+	width : 80;
+	top : 20;
+	left : 20;
+}
+
+#notice{
+	position : absolute;
+	top : 70px;
+	bottom : 0;
+	left : 0;
+	right : 0;
+	visibility : hidden;
+}
+
+#log_error{
+	visibility : hidden;
+}
+
+.note{	
+	width: 190px;
+	height: 136px;
+	box-shadow: 5px 5px 5px grey;
+}
+.editable{
+	overflow : auto;
+	height : 100%;
+}
+.editable:focus {
+	border: 0;
+	outline: 0;
+}
+.content{
+	cursor: text;
+	padding-left: 0.75em;
+	padding-right: 0.01em;
+	height : 90;
+}
+.header{
+	cursor: move;
+	width: 100%;
+	height: 26px;
+}
+.time{
+	height : 20px;
+	bottom : 0;
+}
